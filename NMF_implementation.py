@@ -118,10 +118,10 @@ sns.heatmap(X.toarray()[:,:12], annot=True, cmap='coolwarm')
 plt.xlabel("Words")
 plt.ylabel("Documents")
 plt.autoscale()
-plt.savefig("heatmap.png")
+plt.savefig("heatmap3.png")
 plt.show()
 
-n_topics = 3
+n_topics = 5
 
 # Step 2: Apply NMF for topic modeling
 def apply_nmf(n_topics, X_input):
@@ -138,7 +138,7 @@ sns.heatmap(W, annot=True)
 plt.xlabel("Topics")
 plt.ylabel("Documents")
 plt.autoscale()
-plt.savefig("Doc_topic.png")
+plt.savefig("Doc_topic3.png")
 plt.show()
 
 # Step 3: Interpret Topics
@@ -173,7 +173,7 @@ data = {
 }
 
 # Sauvegarde dans un fichier JSON
-with open("nmf_results.json", "w") as f:
+with open("nmf_results3.json", "w") as f:
     json.dump(data, f, indent=4)
 
 # plt.plot(range(1, 15), ratios, marker='o')
