@@ -134,6 +134,13 @@ W, H, ratio, list_norm = NMF_algorithm(n_topics, X)
 print(f"X shape = {X.shape} and number of elements = {X.shape[0]*X.shape[1]}")
 print(f"total number of elements = {W.shape[0]*W.shape[1] + H.shape[0]*H.shape[1]}")
 
+sns.heatmap(W, annot=True)
+plt.xlabel("Topics")
+plt.ylabel("Documents")
+plt.autoscale()
+plt.savefig("Doc_topic.pdf")
+plt.show()
+
 # Step 3: Interpret Topics
 terms = vectorizer.get_feature_names_out()
 for i, topic in enumerate(H):

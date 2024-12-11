@@ -12,8 +12,16 @@
     <div id="content">
         <div id="texts">
             <h2>Original texts</h2>
-            <button id="toggle-texts">Show/Hide</button>
+            <button class="button-toggle" id="toggle-texts">Show/Hide</button>
             <div id="text-list" style="display: none;"></div>
+        </div>
+        <div class="graph" id="graph">
+            <h2>TF-IDF Matrix</h2>
+            <button class="button-toggle" id="toggle-texts2">Show/Hide</button>
+            <div id="image" style="display:none">
+                <h3 id="explanations">11 words on 462</h3>
+                <div><img src="heatmap.pdf" alt="tf-idf Matrix"></div>
+            </div>
         </div>
         <div id="topics">
             <h2>Topics and Keywords</h2>
@@ -22,6 +30,11 @@
         <div id="documents">
             <h2>Documents by Topic</h2>
             <div id="docs"></div>
+        </div>
+        <div class="graph" id="graph2">
+            <h2>Document-topic Matrix (W)</h2>
+            <button class="button-toggle" id="toggle-texts3">Show/Hide</button>
+            <div id="image2" style="display:none"><img src="Doc_topic.pdf" alt="tf-idf Matrix"></div>
         </div>
     </div>
 

@@ -6,14 +6,14 @@
             "instrument"
         ],
         "Topic 2": [
-            "sushi",
-            "fish",
-            "dining"
-        ],
-        "Topic 3": [
             "python",
             "data",
             "web"
+        ],
+        "Topic 3": [
+            "sushi",
+            "fish",
+            "dining"
         ]
     },
     "topic_documents": {
@@ -23,19 +23,19 @@
             "Document 9"
         ],
         "Topic 2": [
-            "Document 3",
-            "Document 6",
-            "Document 8",
-            "Document 11",
-            "Document 13"
-        ],
-        "Topic 3": [
             "Document 1",
             "Document 4",
             "Document 7",
             "Document 10",
             "Document 12",
             "Document 14"
+        ],
+        "Topic 3": [
+            "Document 3",
+            "Document 6",
+            "Document 8",
+            "Document 11",
+            "Document 13"
         ]
     },
     "document_vector": [

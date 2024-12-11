@@ -1,11 +1,20 @@
 // Charger les données depuis le fichier JSON
-
-const Matrix = document.createElement('img');
-Matrix.src = 'heatmap.pdf';
-Matrix.width = 700;
-Matrix.height = 500;
-Matrix.style = 'margin-top: 20px; display: block; margin-right: auto; margin-left: auto;';
-document.body.appendChild(Matrix);
+document.getElementById('toggle-texts2').addEventListener('click', () => {
+    const ImageGraph = document.getElementById('image');
+    if (ImageGraph.style.display === 'none') {
+        ImageGraph.style.display = 'block';
+    } else {
+        ImageGraph.style.display = 'none';
+    }
+});
+document.getElementById('toggle-texts3').addEventListener('click', () => {
+    const ImageGraph2 = document.getElementById('image2');
+    if (ImageGraph2.style.display === 'none') {
+        ImageGraph2.style.display = 'block';
+    } else {
+        ImageGraph2.style.display = 'none';
+    }
+});
 fetch('nmf_results.json')
     .then(response => response.json())
     .then(data => {

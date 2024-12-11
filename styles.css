@@ -14,6 +14,20 @@ h1 {
     margin: 0;
 }
 
+#image{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    left: 30px;
+}
+h3{
+    position: absolute;
+    right: 20%;
+    top: 50%;
+
+}
+
 #content {
     display: flex;
     align-items: center;
@@ -23,16 +37,18 @@ h1 {
     justify-content: space-around;
     margin: 20px;
 }
+#graph{
+    position: relative;
+}
 
-
-#texts, #topics, #documents {
+#texts, #topics, #documents, .graph {
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 45%;
+    width: 65%;
 }
 
 h2 {
@@ -45,7 +61,7 @@ h2 {
     border-bottom: 1px solid #ddd;
 }
 
-#toggle-texts {
+.button-toggle {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -55,7 +71,7 @@ h2 {
     border-radius: 5px;
 }
 
-#toggle-texts:hover {
+.toggle-texts:hover {
     background-color: #45a049;
 }
 
