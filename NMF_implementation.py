@@ -118,7 +118,7 @@ sns.heatmap(X.toarray()[:,:12], annot=True, cmap='coolwarm')
 plt.xlabel("Words")
 plt.ylabel("Documents")
 plt.autoscale()
-plt.savefig("heatmap.pdf")
+plt.savefig("heatmap.png")
 plt.show()
 
 n_topics = 3
@@ -138,7 +138,7 @@ sns.heatmap(W, annot=True)
 plt.xlabel("Topics")
 plt.ylabel("Documents")
 plt.autoscale()
-plt.savefig("Doc_topic.pdf")
+plt.savefig("Doc_topic.png")
 plt.show()
 
 # Step 3: Interpret Topics
