@@ -121,7 +121,7 @@ plt.autoscale()
 plt.savefig("heatmap3.png")
 plt.show()
 
-n_topics = 5
+n_topics = 2
 
 # Step 2: Apply NMF for topic modeling
 def apply_nmf(n_topics, X_input):
