@@ -1,41 +1,47 @@
 {
     "keywords_per_topic": {
         "Topic 1": [
-            "piano",
-            "music",
-            "instrument"
-        ],
-        "Topic 2": [
             "sushi",
             "fish",
-            "dining"
+            "dining",
+            "japanese",
+            "ingredients"
         ],
-        "Topic 3": [
+        "Topic 2": [
             "python",
             "data",
-            "web"
+            "web",
+            "developers",
+            "language"
+        ],
+        "Topic 3": [
+            "piano",
+            "music",
+            "instrument",
+            "learning",
+            "coordination"
         ]
     },
     "topic_documents": {
         "Topic 1": [
-            "Document 2",
-            "Document 5",
-            "Document 9"
-        ],
-        "Topic 2": [
             "Document 3",
             "Document 6",
             "Document 8",
             "Document 11",
             "Document 13"
         ],
-        "Topic 3": [
+        "Topic 2": [
             "Document 1",
             "Document 4",
             "Document 7",
             "Document 10",
             "Document 12",
             "Document 14"
+        ],
+        "Topic 3": [
+            "Document 2",
+            "Document 5",
+            "Document 9"
         ]
     },
     "document_vector": [

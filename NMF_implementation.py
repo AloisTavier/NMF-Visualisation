@@ -112,16 +112,17 @@ def NMF_algorithm(n_topics, X):
 # Step 1: Preprocess text and build TF-IDF matrix
 vectorizer = TfidfVectorizer(stop_words='english')
 X = vectorizer.fit_transform(document_vector)  # Creates the document-term matrix
+n_topics = 2
 
 # plot matrix X with values noted in the cells
-sns.heatmap(X.toarray()[:,:12], annot=True, cmap='coolwarm')
+sns.heatmap(X.toarray()[:,:12],yticklabels=[f"{i+1}" for i in range (X.shape[0])], annot=True, cmap='coolwarm')
 plt.xlabel("Words")
 plt.ylabel("Documents")
 plt.autoscale()
 plt.savefig("heatmap3.png")
 plt.show()
 
-n_topics = 2
+
 
 # Step 2: Apply NMF for topic modeling
 def apply_nmf(n_topics, X_input):
@@ -134,7 +135,7 @@ W, H, ratio, list_norm = NMF_algorithm(n_topics, X)
 print(f"X shape = {X.shape} and number of elements = {X.shape[0]*X.shape[1]}")
 print(f"total number of elements = {W.shape[0]*W.shape[1] + H.shape[0]*H.shape[1]}")
 
-sns.heatmap(W, annot=True)
+sns.heatmap(W, annot=True, xticklabels=[f"{i+1}" for i in range (n_topics)],yticklabels=[f"{i+1}" for i in range (X.shape[0])])
 plt.xlabel("Topics")
 plt.ylabel("Documents")
 plt.autoscale()
@@ -158,7 +159,7 @@ for i, topic in enumerate(H):
     # print(f"The documents about {terms[topic.argsort()[-1]]} are the documents: " + ", ".join(documents_by_topic[i]))
 
 ratios = [apply_nmf(i +1, X)[2] for i in range(14)]
-keywords_per_topic = {f"Topic {i+1}": terms[np.argsort(H[i, :])[-3:][::-1]].tolist() for i in range(n_topics)}
+keywords_per_topic = {f"Topic {i+1}": terms[np.argsort(H[i, :])[-5:][::-1]].tolist() for i in range(n_topics)}
 print(keywords_per_topic)
 
 # Assignation des topics aux documents

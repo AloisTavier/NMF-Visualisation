@@ -48,7 +48,7 @@ fetch('nmf_results3.json')
                     // Create a div containing a text with the title in bold
                     const textDiv = document.createElement('div');
                     textDiv.classList.add('text');
-                    textDiv.innerHTML = `<strong>${index}:</strong> ${text}`;
+                    textDiv.innerHTML = `<strong>Text ${index+1}:</strong> ${text}`;
                     textListDiv.appendChild(textDiv);
 
                 });
